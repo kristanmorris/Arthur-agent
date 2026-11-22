@@ -47,9 +47,13 @@ def parse_frontmatter(skill_file: Path) -> dict:
 
 def update_readme(skills: list[dict]):
     """Update skills table in README.md."""
+    seen = set()
     table_rows = []
     for s in skills:
         name = s["name"]
+        if name in seen:
+            continue
+        seen.add(name)
         desc = s["description"] or "Custom skill"
         table_rows.append(f"| [`{name}`](./skills/{name}/SKILL.md) | {desc} | Active |")
     
