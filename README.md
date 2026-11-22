@@ -8,7 +8,9 @@ All skills are stored under [`skills/`](./skills) with standard `SKILL.md` defin
 
 | Skill | Description | Status |
 |---|---|---|
+| [`ecc`](./skills/ecc/SKILL.md) | Harness-native engineering system providing structured test-driven development (TDD), implementation planning, code reviews, build repairs, security scanning (AgentShield), and multi-agent coordination. | Active |
 | [`file-organizer`](./skills/file-organizer/SKILL.md) | Intelligently organizes your files and folders across your computer by understanding context, finding duplicates, suggesting better structures, and automating cleanup tasks. Reduces cognitive load and keeps your digital workspace tidy without manual effort. | Active |
+| [`windows-mcp`](./skills/windows-mcp/SKILL.md) | Control and automate the Windows operating system using the Windows-MCP server for desktop UI automation, accessibility tree inspection, mouse and keyboard simulation, app management, PowerShell, and system tasks. | Active |
 
 ## Storage & Synchronization
 

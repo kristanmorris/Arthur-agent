@@ -126,8 +126,12 @@ def sync_drive(skills: list[dict]):
     tmp_dir.mkdir(parents=True, exist_ok=True)
 
     # 1. Sync individual skill markdown files
+    seen = set()
     for s in skills:
         name = s["name"]
+        if name in seen:
+            continue
+        seen.add(name)
         skill_path = s["path"]
         target_name = f"{name}.md"
         staged_path = tmp_dir / target_name
